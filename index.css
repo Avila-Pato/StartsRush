@@ -8,12 +8,30 @@ body{
   inset: 0;
 }
 
+:root {
+  --space-layer: 
+    0px 0px #fff,
+    50vw 20vh #fff,
+    100vw 40vh #fff,
+    150vw 60vh #fff,
+    200vw 80vh #fff,
+    250vw 100vh #fff,
+    300vw 120vh #fff,
+    350vw 140vh #fff,
+    400vw 160vh #fff,
+    450vw 180vh #fff;
+    
+  /* --size-height: 10px; */
+
+}
+
 .space {     
   width: var(--size);
   height: var(--size);
   background: #fff;
   box-shadow: var(--space-layer);
   position: absolute;
+  border-radius: 50% ;
   top: 0;
   left: 0;
   opacity: 75%;
@@ -21,6 +39,6 @@ body{
 }
 
 @keyframes moveStars {
-  from {transform: translateY(0); }
-  to {transform: translateY(-100vh); }
+  from {transform: translateY(-100vh); }
+  to {transform: translateY(0vh); }
 }
